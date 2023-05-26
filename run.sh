@@ -1,10 +1,8 @@
 #!/bin/sh
 
-ROOT=~/ia
-
 NAME=${1:-"unnamed"}
 SERVICE="auto-gpt-$NAME"
-DIR=$ROOT/"$NAME"
+DIR=~/ai/"$NAME"
 
 COMPOSE="
 version: '3.9'
@@ -13,7 +11,7 @@ services:
     # image: significantgravitas/auto-gpt
     image: autogpt
     env_file:
-      - $ROOT/.env
+      - ~/ai/.env
     profiles: ['exclude-from-up']
     volumes:
       - ./auto_gpt_workspace:/app/autogpt/auto_gpt_workspace
