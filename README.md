@@ -2,7 +2,7 @@
 
 This will create a folder and run an individual AutoGPT instance with a single comand.
 
-1. Place this repository in `~/ia` (or change `$DIR` and `env_file:` path in `run.sh`)
+1. Place this repository in `~/ai` (or change `$DIR` and `env_file:` path in `run.sh`)
 2. Build a new Docker image with AutoGPT + NodeJS: just run `make build`
 3. Copy `.env.template` to `.env` and paste your OpenAI API Key
     - Go to https://platform.openai.com/account/billing/overview and click "Set up paid account" button
